@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRO SERVICE ENGINEERING | Фирмени услуги</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="controler.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#top" aria-label="PRO SERVICE ENGINEERING начало">
+          <span class="logo-mark">PSI</span>
+          <span>PRO SERVICE ENGINEERING</span>
+        </a>
+
+        <nav class="menu" aria-label="Основна навигация">
+          <a href="#services">Услуги</a>
+          <a href="#gallery">Галерия</a>
+          <a href="#about">За нас</a>
+          <a class="btn btn-primary" href="#contact">Свържи се</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Професионална работа за дома и бизнеса</h1>
+          <p>От първия оглед до последния детайл.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Виж услугите</a>
+            <a class="btn btn-secondary" href="#gallery">Разгледай проекти</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Услуги</h2>
+            <p>
+              Подреди най-важните услуги в отделни блокове. Всеки блок трябва да
+              казва ясно какво правите и каква полза получава клиентът.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">01</div>
+              <h3>Ремонтни дейности</h3>
+              <p>
+                Вътрешни ремонти, довършителни работи, боядисване и освежаване
+                на помещения.Изграждане на комуникационни мрежи , електрически
+                инсталации и системи за протиеопожарна безопасност.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">02</div>
+              <h3>Монтаж и поддръжка</h3>
+              <p>
+                Монтаж на офис обзавеждане, компютърна техника и периферни
+                устрийства. Поддръжка на техническото обзавеждане и цялостна
+                поддръжка на обекта.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">03</div>
+              <h3>Почистване след работа</h3>
+              <p>
+                Финално почистване след ремонт или услуга, така че обектът да е
+                готов за ползване.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-band">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Примерни проекти</h2>
+            <!--
+            
+            <p>
+              Галерията е мястото, където клиентът вижда реални резултати. Клик
+              върху проект отваря модален прозорец с повече снимки и кратко
+              описание.
+            </p>
+          --></div>
+
+          <div class="gallery-grid">
+            <figure
+              class="gallery-item repair-work"
+              data-project="repairWork"
+              role="button"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80"
+                alt="Завършен интериорен ремонт"
+              />
+              <figcaption class="gallery-label">Интериорен ремонт</figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item installation"
+              data-project="installation"
+              role="button"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
+                alt="Работа с инструменти"
+              />
+              <figcaption class="gallery-label">Монтаж</figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item finishing-works"
+              data-project="finishingWorks"
+              role="button"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1592928302636-c83cf1e1f55f?auto=format&fit=crop&w=900&q=80"
+                alt="Довършителни дейности"
+              />
+              <figcaption class="gallery-label">Довършителни работи</figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item exterior-insulation"
+              data-project="exteriorInsulation"
+              role="button"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+                alt="Външни строителни дейности"
+              />
+              <figcaption class="gallery-label">
+                Външни топлоизолации
+              </figcaption>
+            </figure>
+
+            <figure
+              class="gallery-item project-progress"
+              data-project="projectProgress"
+              role="button"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+                alt="Строителен обект в процес"
+              />
+              <figcaption class="gallery-label">Обект в процес</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about-layout">
+          <div class="about-photo">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+              alt="Екип на строителен обект"
+            />
+          </div>
+
+          <div>
+            <div class="section-heading">
+              <h2>За фирмата</h2>
+              <p>
+                Нашата фирма над 10години предлага на Бълрския пазар ,
+                иновативен подход за ремонт на офиси като същевременно с това
+                поемаме цялата поддръжка по техническото и строително
+                осигуряване на обектите
+              </p>
+            </div>
+
+            <div class="features">
+              <div class="feature">Безплатна консултация</div>
+              <div class="feature">Коректни срокове</div>
+              <div class="feature">Ясна оферта</div>
+              <div class="feature">Снимки от реални обекти</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band">
+        <div class="container contact-layout">
+          <div>
+            <div class="section-heading">
+              <h2>Контакти</h2>
+              <p>
+                Добави реалните данни на фирмата. Формата тук е примерна и за
+                момента е само front-end елемент.
+              </p>
+            </div>
+
+            <ul class="contact-list">
+              <li>
+                <strong>Телефон</strong>
+                <a href="tel:+359888123456">+359 888 123 456</a>
+              </li>
+              <li>
+                <strong>Имейл</strong>
+                <a href="mailto:office@example.com">office@example.com</a>
+              </li>
+              <li>
+                <strong>Район на работа</strong>
+                София и област
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <input
+              type="text"
+              name="name"
+              placeholder="Вашето име"
+              aria-label="Вашето име"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+              aria-label="Телефон"
+            />
+            <textarea
+              name="message"
+              placeholder="Кратко описание на услугата"
+              aria-label="Кратко описание на услугата"
+            ></textarea>
+            <button class="btn btn-primary" type="submit">
+              Изпрати запитване
+            </button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal__overlay" data-close-modal></div>
+      <section
+        class="project-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="project-modal__close"
+          type="button"
+          aria-label="Затвори"
+          data-close-modal
+        >
+          X
+        </button>
+
+        <div class="project-modal__media">
+          <img id="modalImage" alt="" />
+        </div>
+
+        <div class="project-modal__content">
+          <p class="project-modal__counter" id="modalCounter"></p>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+
+          <div class="project-modal__actions">
+            <button class="btn btn-secondary" id="prevImage" type="button">
+              Назад
+            </button>
+            <button class="btn btn-primary" id="nextImage" type="button">
+              Напред
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 ProService. Всички права запазени.</span>
+        <span>Фирмен сайт-визитка</span>
+      </div>
+    </footer>
+  </body>
+</html>

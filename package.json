@@ -1,0 +1,19 @@
+{
+  "name": "new_project_1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "parcel": "^2.16.4"
+  }
+}
